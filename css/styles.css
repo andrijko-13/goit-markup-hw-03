@@ -1,0 +1,278 @@
+/*
+color: var(--accent-color) ----- accent
+color: var(--primary-color) ----- primary
+color: var(--secondary-color) ----- secondary
+color: #2196f3; ----- active
+*/
+
+:root {
+  --accent-color: #212121;
+  --primary-color: #757575;
+  --secondary-color: #ffffff;
+  --active-color: #2196f3;
+
+  --primary-font: Roboto, sans-serif;
+  --secondary-font: Raleway, sans-serif;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+li {
+  list-style-type: none;
+}
+
+.nav-list-link-current {
+  font-family: var(--primary-font);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--active-color);
+}
+
+.nav-list-link:hover,
+.header-address-mail:hover,
+.header-address-tel:hover {
+  color: var(--active-color);
+}
+
+.nav-list-link:focus,
+.header-address-mail:focus,
+.header-address-tel:focus {
+  color: var(--active-color);
+}
+
+.button-elements {
+  color: var(--accent-color);
+
+  font-family: var(--primary-font);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.button-elements:hover {
+  background-color: var(--active-color);
+  color: var(--secondary-color);
+}
+
+.button-elements:focus {
+  background-color: var(--active-color);
+  color: var(--secondary-color);
+}
+
+/* ============== COMPONENTS ==============*/
+.logo-web,
+.logo-studio {
+  font-family: var(--secondary-font);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+.logo-web {
+  color: var(--active-color);
+}
+.logo-studio {
+  color: var(--accent-color);
+}
+/* ============== END COMPONENTS ==============*/
+
+/* ============== HEADER ==============*/
+.nav-list-link {
+  font-family: var(--primary-font);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+}
+
+.header-address-mail,
+.header-address-tel {
+  font-family: var(--primary-font);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--primary-color);
+}
+/* ============== END HEADER ==============*/
+
+/* ============== HERO ==============*/
+.hero-title {
+  font-family: var(--primary-font);
+  font-style: normal;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  /* color: var(--secondary-color)*/
+}
+.hero-button {
+  font-family: var(--primary-font);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  background-color: var(--active-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  color: var(--secondary-color);
+}
+
+/* ============== FEATURE-LIST ==============*/
+.feautures-list-item {
+  font-family: var(--primary-font);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--accent-color);
+}
+.feautures-list-desc {
+  font-family: var(--primary-font);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--primary-color);
+}
+/* ============== END FEATURE-LIST ==============*/
+
+/* ============== WHAT WE DO ==============*/
+.what-we-do-title {
+  font-family: var(--primary-font);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--accent-color);
+}
+/* ============== END WHAT WE DO ==============*/
+
+/* ============== OUR TEAM ==============*/
+.our-team-title {
+  font-family: var(--primary-font);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--accent-color);
+}
+.our-team-mates-people {
+  font-family: var(--primary-font);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.46;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--accent-color);
+}
+.our-team-mates-role {
+  font-family: var(--primary-font);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.46;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--primary-color);
+}
+
+/* ============== END OUR TEAM ==============*/
+
+/* ============== FOOTER ==============*/
+.footer-address-map {
+  font-family: var(--primary-font);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  /* color: var(--secondary-color) */
+}
+.footer-address-tel,
+.footer-address-mail {
+  font-family: var(--primary-font);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  /*color: rgba(255, 255, 255, 0.6);*/
+}
+/* ============== END FOOTER ==============*/
+
+/* ============== PORFOLIO BUTTONS ==============*/
+.elements .button {
+  font-family: var(--primary-font);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--accent-color);
+}
+
+/* ============== END PORFOLIO BUTTONS ==============*/
+
+/* ============== PORFOLIO GRID ==============*/
+.grid-item-title {
+  font-family: var(--primary-font);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+
+  color: var(--accent-color);
+}
+
+.grid-item-desc {
+  font-family: var(--primary-font);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+
+  color: var(--primary-color);
+}
+
+/* ============== END PORFOLIO GRID ==============*/
