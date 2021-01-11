@@ -15,23 +15,23 @@
 <body>
         <!-- Хэддер -->
         <header class="header">
-            <nav class="nav-list">
-                <a href="./index.html">
-                    <span class="logo-web">Web</span><span class="logo-studio">Studio</span>
-                </a>
-                <ul class="nav-list-items">
-                    <li><a class="nav-list-link" href="./index.html">Студия</a></li>
-                    <li><a class="nav-list-link-current" href="./portfolio.html">Портфолио</a></li>
-                    <li><a class="nav-list-link" href="#">Контакты</a></li>
-                </ul>
-            </nav>
-            <address class="header-address">
-                <ul>
-                    <li><a class="header-address-mail" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                    <li><a class="header-address-tel" href="tel+380961111111">+38 096 111 11 11</a></li>
-                </ul>
-            </address>
-        </header>
+            <div class="page-header container">
+                <nav class="nav-list">
+                    <ul class="nav-list-items">
+                        <a class="logo" href="./index.html"><span class="logo-web">Web</span><span class="logo-studio">Studio</span></a>
+                        <li><a class="nav-list-link" href="./index.html">Студия</a></li>
+                        <li><a class="nav-list-link current" href="./portfolio.html">Портфолио</a></li>
+                        <li><a class="nav-list-link" href="#">Контакты</a></li>
+                    </ul> 
+                </nav>
+                <address class="header-address">
+                    <ul class="header-address">
+                        <li><a class="header-address-mail" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                        <li><a class="header-address-tel" href="tel:+380961111111">+38 096 111 11 11</a></li>
+                    </ul>
+                </address>
+            </div>
+                </header>
         <!-- Мэйн -->
         <main>
             <section>
@@ -116,17 +116,18 @@
 
 
         <footer class="footer">
-            <a href="./index.html">
-                <span class="logo-web">Web</span><span class="logo-studio">Studio</span>
-            </a>
-            <address class="footer-address">
-                <ul>
-                    <li class="footer-address-map"><a href="https://goo.gl/maps/YreS3gh4uBGcfshq7" target="_blank">г. Киев, пр-т
-                            Леси Украинки, 26</a></li>
-                    <li class="footer-address-mail"><a href="mailto:info@example.com"></a>info@example.com</li>
-                    <li class="footer-address-tel"><a href="tel:+380991111111"></a>+38 099 111 11 11</li>
-                </ul>
-            </address>
+            <div class="container">
+                <a href="./index.html">
+                    <span class="logo-web">Web</span><span class="logo-studio reverse">Studio</span>
+                </a>
+                <address class="footer-address">
+                    <ul class="footer-address-links">
+                        <li><a href="https://goo.gl/maps/YreS3gh4uBGcfshq7" target="_blank" class="footer-address-map">г. Киев, пр-т Леси Украинки, 26</a></li>
+                        <li><a href="mailto:info@example.com" class="footer-address-mail">info@example.com</a></li>
+                        <li><a href="tel:+380991111111" class="footer-address-tel">+38 099 111 11 11</a></li>
+                    </ul>
+                </address>
+            </div>
         </footer>
 </body>
 </html>

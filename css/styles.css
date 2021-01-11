@@ -14,6 +14,30 @@ color: #2196f3; ----- active
   --primary-font: Roboto, sans-serif;
   --secondary-font: Raleway, sans-serif;
 }
+img {
+  display: block;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+.container {
+width: 1200px;
+margin-left: auto;
+margin-right: auto;
+padding-left: 15px;
+padding-right: 15px;
+}
 
 .visually-hidden {
   position: absolute;
@@ -31,11 +55,13 @@ color: #2196f3; ----- active
 a {
   text-decoration: none;
 }
-li {
+ul,
+ol {
   list-style-type: none;
+  padding-inline-start: 0px;
 }
 
-.nav-list-link-current {
+.nav-list-link.current {
   font-family: var(--primary-font);
   font-style: normal;
   font-weight: 500;
@@ -47,36 +73,20 @@ li {
 
 .nav-list-link:hover,
 .header-address-mail:hover,
-.header-address-tel:hover {
-  color: var(--active-color);
-}
-
+.header-address-tel:hover,
 .nav-list-link:focus,
 .header-address-mail:focus,
 .header-address-tel:focus {
   color: var(--active-color);
 }
 
-.button-elements {
-  color: var(--accent-color);
 
-  font-family: var(--primary-font);
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.62;
-  text-align: center;
-  letter-spacing: 0.03em;
-}
-.button-elements:hover {
+.button-elements:hover,
+.button-elements:focus  {
   background-color: var(--active-color);
   color: var(--secondary-color);
 }
 
-.button-elements:focus {
-  background-color: var(--active-color);
-  color: var(--secondary-color);
-}
 
 /* ============== COMPONENTS ==============*/
 .logo-web,
@@ -94,9 +104,47 @@ li {
 .logo-studio {
   color: var(--accent-color);
 }
+.logo-studio.reverse {
+  color: var(--secondary-color);
+  
+}
+
+.header {
+  border-bottom: 1px solid #ECECEC;
+}
 /* ============== END COMPONENTS ==============*/
 
 /* ============== HEADER ==============*/
+.header {
+  display: flex;
+  align-items: baseline;
+}
+
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  margin-right: 92px;
+}
+
+.nav-list-items {
+  display: flex;
+}
+
+.header-address {
+  display: flex;
+}
+
+.nav-list-items li:not(:last-child),
+.header-address li:not(:last-child) {
+  margin-right: 50px;
+}
+
+
 .nav-list-link {
   font-family: var(--primary-font);
   font-style: normal;
@@ -120,6 +168,15 @@ li {
 /* ============== END HEADER ==============*/
 
 /* ============== HERO ==============*/
+.hero {
+  background-color: #2F303A;
+  height: 600px;
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+.hero .container {
+  flex-direction: column;
+}
 .hero-title {
   font-family: var(--primary-font);
   font-style: normal;
@@ -129,22 +186,25 @@ li {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  /* color: var(--secondary-color)*/
+  color: var(--secondary-color);
+  width: 700px;
+  margin: 0 auto;
 }
 .hero-button {
+  display: block;
+  margin: 0 auto;
+  margin-top: 40px;
   font-family: var(--primary-font);
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
   line-height: 1.87;
-  display: flex;
-  align-items: center;
-  text-align: center;
   letter-spacing: 0.06em;
   background-color: var(--active-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
   color: var(--secondary-color);
+  height: 50px;
+  width: 200px;
+  border-radius: 4px;
 }
 
 /* ============== FEATURE-LIST ==============*/
@@ -167,6 +227,20 @@ li {
   letter-spacing: 0.03em;
   color: var(--primary-color);
 }
+
+.card-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.feature-card {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  width: 270px;
+}
+.card-list li:not(:last-child) {
+  margin-right: 30px;
+}
 /* ============== END FEATURE-LIST ==============*/
 
 /* ============== WHAT WE DO ==============*/
@@ -179,10 +253,31 @@ li {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--accent-color);
+  margin: 0 auto;
+  margin-bottom: 50px;
+  justify-content: center;
 }
+
+.what-we-do-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.what-we-do-list li:not(:last-child) {
+  margin-right: 30px;
+}
+
+.what-we-do-list li {
+  margin-bottom: 94px;
+}
+
 /* ============== END WHAT WE DO ==============*/
 
 /* ============== OUR TEAM ==============*/
+.our-team {
+  background-color: #F5F4FA;
+}
+
 .our-team-title {
   font-family: var(--primary-font);
   font-style: normal;
@@ -192,6 +287,8 @@ li {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--accent-color);
+  padding-top: 94px;
+  padding-bottom: 50px;
 }
 .our-team-mates-people {
   font-family: var(--primary-font);
@@ -214,9 +311,43 @@ li {
   color: var(--primary-color);
 }
 
-/* ============== END OUR TEAM ==============*/
+.team-cards {
+  width: 270px;
+  display: flex;
+  margin-bottom: -16px;
+}
+.team-cards li:not(:last-child) {
+  margin-right: 30px;
+}
+
+.our-team-mates {
+  background-color: var(--secondary-color);
+}
+
+.our-team-mates h3 {
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+
+.our-team-mates p {
+  padding-bottom: 30px;
+}
+
+section.our-team {
+  padding-bottom: 94px;
+}
+/* ============== END OUR TEAM ==== ==========*/
 
 /* ============== FOOTER ==============*/
+.footer {
+  background-color: #2F303A;
+}
+
+.footer .container {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
 .footer-address-map {
   font-family: var(--primary-font);
   font-style: normal;
@@ -224,7 +355,7 @@ li {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  /* color: var(--secondary-color) */
+  color: var(--secondary-color);
 }
 .footer-address-tel,
 .footer-address-mail {
@@ -234,12 +365,12 @@ li {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  /*color: rgba(255, 255, 255, 0.6);*/
+  color: rgba(255, 255, 255, 0.6);
 }
 /* ============== END FOOTER ==============*/
 
 /* ============== PORFOLIO BUTTONS ==============*/
-.elements .button {
+.elements .button-elements {
   font-family: var(--primary-font);
   font-style: normal;
   font-weight: 500;
@@ -248,8 +379,25 @@ li {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--accent-color);
+  margin-top: 94px;
+  margin-bottom: 50px;
+  background-color: #F5F4FA;
+  height: 38px;
+  padding-left: 22px;
+  padding-right: 22px;
+  border-radius: 4px;
 }
 
+
+
+.elements {
+  display: flex;
+  justify-content: center;
+}
+
+.elements li:not(:last-child) {
+  margin-right: 8px;
+}
 /* ============== END PORFOLIO BUTTONS ==============*/
 
 /* ============== PORFOLIO GRID ==============*/
@@ -275,4 +423,24 @@ li {
   color: var(--primary-color);
 }
 
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.grid-item {
+  width: 370px;
+}
+
+.grid-item a h2 {
+  padding-top: 20px;
+  padding-bottom: 4px;
+}
+.grid-item a p {
+  padding-bottom: 20px;
+}
+.grid-item:not(:nth-child(3n)) {
+  margin-right: 30px;
+}
 /* ============== END PORFOLIO GRID ==============*/
