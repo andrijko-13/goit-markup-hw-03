@@ -81,7 +81,7 @@ ol {
 }
 
 
-.button-elements:hover,
+.button-elements:hover 
 .button-elements:focus  {
   background-color: var(--active-color);
   color: var(--secondary-color);
@@ -117,6 +117,7 @@ ol {
 /* ============== HEADER ==============*/
 .header {
   display: flex;
+  height: 80px;
   align-items: baseline;
 }
 
@@ -133,10 +134,15 @@ ol {
 
 .nav-list-items {
   display: flex;
+  align-items: center;
+  margin-top: 24px;
+  margin-bottom: 24px;
+
 }
 
 .header-address {
   display: flex;
+  align-items: center;
 }
 
 .nav-list-items li:not(:last-child),
@@ -234,9 +240,11 @@ ol {
 }
 
 .feature-card {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  margin-top: 94px;
+  margin-bottom: 94px;
   width: 270px;
+  outline: solid black 1px;
+
 }
 .card-list li:not(:last-child) {
   margin-right: 30px;
@@ -261,6 +269,8 @@ ol {
 .what-we-do-list {
   display: flex;
   flex-wrap: wrap;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 .what-we-do-list li:not(:last-child) {
@@ -322,6 +332,8 @@ ol {
 
 .our-team-mates {
   background-color: var(--secondary-color);
+  outline: solid black 1px;
+
 }
 
 .our-team-mates h3 {
@@ -379,8 +391,6 @@ section.our-team {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--accent-color);
-  margin-top: 94px;
-  margin-bottom: 50px;
   background-color: #F5F4FA;
   height: 38px;
   padding-left: 22px;
@@ -393,6 +403,9 @@ section.our-team {
 .elements {
   display: flex;
   justify-content: center;
+  outline: solid black 1px;
+  margin-top: 94px;
+  margin-bottom: 50px;
 }
 
 .elements li:not(:last-child) {
@@ -427,20 +440,30 @@ section.our-team {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin-bottom: 94px;
 }
 
 .grid-item {
   width: 370px;
+  outline: solid black 1px;
+  margin-bottom: 30px ;
 }
 
-.grid-item a h2 {
+.grid-item-title {
   padding-top: 20px;
   padding-bottom: 4px;
+  padding-left: 24px;
 }
-.grid-item a p {
+.grid-item-desc {
   padding-bottom: 20px;
+  padding-left: 24px;
 }
 .grid-item:not(:nth-child(3n)) {
   margin-right: 30px;
 }
+
+.grid-item:nth-last-child(-n+3) {
+  margin-bottom: 0px;
+}
+
 /* ============== END PORFOLIO GRID ==============*/
