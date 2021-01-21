@@ -60,6 +60,7 @@ ul,
 ol {
   list-style-type: none;
   padding-inline-start: 0px;
+  margin: 0px;
 }
 
 .nav-list-link.current {
@@ -125,6 +126,8 @@ ol {
 .page-header {
   display: flex;
   justify-content: space-between;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .logo {
@@ -135,8 +138,7 @@ ol {
 .nav-list-items {
   display: flex;
   align-items: center;
-  margin-top: 24px;
-  margin-bottom: 24px;
+
 
 }
 
@@ -176,7 +178,6 @@ ol {
 /* ============== HERO ==============*/
 .hero {
   background-color: #2F303A;
-  height: 600px;
   padding-top: 200px;
   padding-bottom: 200px;
 }
@@ -223,6 +224,7 @@ ol {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--accent-color);
+  margin-bottom: 10px;
 }
 .feautures-list-desc {
   font-family: var(--primary-font);
@@ -286,6 +288,9 @@ ol {
 /* ============== OUR TEAM ==============*/
 .our-team {
   background-color: #F5F4FA;
+  padding-top: 94px;
+  padding-bottom: 94px;
+
 }
 
 .our-team-title {
@@ -297,8 +302,7 @@ ol {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--accent-color);
-  padding-top: 94px;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 .our-team-mates-people {
   font-family: var(--primary-font);
@@ -324,7 +328,6 @@ ol {
 .team-cards {
   width: 270px;
   display: flex;
-  margin-bottom: -16px;
 }
 .team-cards li:not(:last-child) {
   margin-right: 30px;
@@ -346,7 +349,7 @@ ol {
 }
 
 section.our-team {
-  padding-bottom: 94px;
+
 }
 /* ============== END OUR TEAM ==== ==========*/
 
@@ -379,7 +382,28 @@ section.our-team {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
+
+.footer-logo {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.footer-address-links li:not(:last-child) {
+  margin-bottom: 9px;
+}
+
 /* ============== END FOOTER ==============*/
+
+
+
+/* ============== PORFOLIO ==============*/
+main .portfolio {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+
+/* ============== END PORFOLIO ==============*/
 
 /* ============== PORFOLIO BUTTONS ==============*/
 .elements .button-elements {
@@ -404,7 +428,6 @@ section.our-team {
   display: flex;
   justify-content: center;
   outline: solid black 1px;
-  margin-top: 94px;
   margin-bottom: 50px;
 }
 
@@ -440,7 +463,6 @@ section.our-team {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-bottom: 94px;
 }
 
 .grid-item {
@@ -450,13 +472,13 @@ section.our-team {
 }
 
 .grid-item-title {
-  padding-top: 20px;
-  padding-bottom: 4px;
-  padding-left: 24px;
+  margin-top: 20px;
+  margin-bottom: 4px;
+  margin-left: 24px;
 }
 .grid-item-desc {
-  padding-bottom: 20px;
-  padding-left: 24px;
+  margin-bottom: 20px;
+  margin-left: 24px;
 }
 .grid-item:not(:nth-child(3n)) {
   margin-right: 30px;
