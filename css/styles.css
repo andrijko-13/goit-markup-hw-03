@@ -29,6 +29,7 @@ p {
 
 button {
   cursor: pointer;
+  border: 0px;
 }
 
 .container {
@@ -79,7 +80,6 @@ ol {
 .header-address-tel:focus {
   color: var(--active-color);
 }
-
 
 .button-elements:hover 
 .button-elements:focus  {
