@@ -215,6 +215,11 @@ ol {
 }
 
 /* ============== FEATURE-LIST ==============*/
+.feautures-list {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .feautures-list-item {
   font-family: var(--primary-font);
   font-style: normal;
@@ -242,11 +247,7 @@ ol {
 }
 
 .feature-card {
-  margin-top: 94px;
-  margin-bottom: 94px;
   width: 270px;
-  outline: solid black 1px;
-
 }
 .card-list li:not(:last-child) {
   margin-right: 30px;
@@ -254,6 +255,12 @@ ol {
 /* ============== END FEATURE-LIST ==============*/
 
 /* ============== WHAT WE DO ==============*/
+.what-we-do {
+  padding-top: 0px;
+  padding-bottom: 94px;
+}
+
+
 .what-we-do-title {
   font-family: var(--primary-font);
   font-style: normal;
@@ -278,11 +285,6 @@ ol {
 .what-we-do-list li:not(:last-child) {
   margin-right: 30px;
 }
-
-.what-we-do-list li {
-  margin-bottom: 94px;
-}
-
 /* ============== END WHAT WE DO ==============*/
 
 /* ============== OUR TEAM ==============*/
@@ -335,17 +337,15 @@ ol {
 
 .our-team-mates {
   background-color: var(--secondary-color);
-  outline: solid black 1px;
-
 }
 
 .our-team-mates h3 {
-  padding-top: 30px;
-  padding-bottom: 10px;
+  margin-top: 30px;
+  margin-bottom: 10px;
 }
 
 .our-team-mates p {
-  padding-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 section.our-team {
@@ -427,7 +427,6 @@ main .portfolio {
 .elements {
   display: flex;
   justify-content: center;
-  outline: solid black 1px;
   margin-bottom: 50px;
 }
 
@@ -461,14 +460,14 @@ main .portfolio {
 
 .grid {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap:  wrap;
   justify-content: center;
 }
 
 .grid-item {
-  width: 370px;
-  outline: solid black 1px;
+  min-width: 370px;
   margin-bottom: 30px ;
+  border: solid #eeeeee 1px;
 }
 
 .grid-item-title {
