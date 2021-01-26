@@ -110,9 +110,6 @@ ol {
   
 }
 
-.header {
-  border-bottom: 1px solid #ECECEC;
-}
 /* ============== END COMPONENTS ==============*/
 
 /* ============== HEADER ==============*/
@@ -122,29 +119,37 @@ ol {
   align-items: baseline;
 }
 
+header .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+header a {
+  display: inline-block;
+  padding: 32px 0px;
+}
 
 .page-header {
   display: flex;
-  justify-content: space-between;
-  padding-top: 24px;
-  padding-bottom: 24px;
+
 }
 
 .logo {
   display: flex;
-  margin-right: 92px;
+  margin-right: 93px;
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 
 .nav-list-items {
   display: flex;
   align-items: center;
-
-
 }
 
 .header-address {
   display: flex;
   align-items: center;
+  margin-left: auto;
 }
 
 .nav-list-items li:not(:last-child),
@@ -172,6 +177,11 @@ ol {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--primary-color);
+}
+
+
+.header {
+  border-bottom: 1px solid #ECECEC;
 }
 /* ============== END HEADER ==============*/
 
@@ -465,9 +475,9 @@ main .portfolio {
 }
 
 .grid-item {
-  min-width: 370px;
+  width: 370px;
   margin-bottom: 30px ;
-  border: solid #eeeeee 1px;
+  flex-wrap: wrap;
 }
 
 .grid-item-title {
@@ -487,4 +497,7 @@ main .portfolio {
   margin-bottom: 0px;
 }
 
+.text-wrapper {
+  border: solid #eeeeee 1px;
+}
 /* ============== END PORFOLIO GRID ==============*/
