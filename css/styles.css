@@ -114,9 +114,10 @@ ol {
 
 /* ============== HEADER ==============*/
 .header {
-  display: flex;
+  display: block;
   height: 80px;
   align-items: baseline;
+  border-bottom: 1px solid #ECECEC;
 }
 
 header .container {
@@ -131,7 +132,6 @@ header a {
 
 .page-header {
   display: flex;
-
 }
 
 .logo {
@@ -146,10 +146,12 @@ header a {
   align-items: center;
 }
 
+.header-address-link {
+  margin-left: auto;
+}
 .header-address {
   display: flex;
   align-items: center;
-  margin-left: auto;
 }
 
 .nav-list-items li:not(:last-child),
@@ -179,10 +181,6 @@ header a {
   color: var(--primary-color);
 }
 
-
-.header {
-  border-bottom: 1px solid #ECECEC;
-}
 /* ============== END HEADER ==============*/
 
 /* ============== HERO ==============*/
